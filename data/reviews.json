@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Johnson | Homeowner",
+    "text": "Nexgen Construction did an excellent job on our bathroom renovation. The work was clean, professional, and completed on schedule. Communication was clear throughout the project.",
+    "location": "Toronto, ON"
+  },
+  {
+    "id": 2,
+    "name": "Michael Chen | Homeowner",
+    "text": "From demolition to final finishing, Nexgen handled our basement renovation with great attention to detail. We are very satisfied with the quality of work.",
+    "location": "Mississauga, ON"
+  },
+  {
+    "id": 3,
+    "name": "Emily Rodriguez | Homeowner",
+    "text": "Reliable, honest, and skilled. Nexgen Construction delivered exactly what they promised and stayed within the agreed budget.",
+    "location": "Vaughan, ON"
+  },
+  {
+    "id": 4,
+    "name": "David Thompson | Homeowner",
+    "text": "Excellent communication and quality work. Our home renovation was completed on schedule and within budget. Couldn't be happier with the results!",
+    "location": "Toronto, ON"
+  }
+]

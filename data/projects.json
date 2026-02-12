@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "title": "Modern Basement Finish",
+    "description": "A complete basement transformation into a functional living space with premium finishes and custom lighting.",
+    "category": "Basement",
+    "images": [
+      { "src": "/images/projects/finished-basement-1.jpeg", "alt": "Finished basement with modern lighting" },
+      { "src": "/images/projects/finished-basement-2.jpeg", "alt": "Basement living area with custom finishes" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Luxury Bathroom Remodel",
+    "description": "Full bathroom renovation featuring contemporary fixtures, tiled walk-in shower, and elegant vanity.",
+    "category": "Bathroom",
+    "images": [
+      { "src": "/images/projects/finished-bathroom-1.jpeg", "alt": "Remodeled bathroom with modern fixtures" },
+      { "src": "/images/projects/finished-bathroom-2.jpeg", "alt": "Bathroom vanity and shower area" },
+      { "src": "/images/projects/finished-bathroom-3.jpeg", "alt": "Completed bathroom tile work" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "New Deck Installation",
+    "description": "A beautifully crafted outdoor deck with durable composite decking and stylish railing system.",
+    "category": "Deck",
+    "images": [
+      { "src": "/images/projects/finished-deck-1.jpeg", "alt": "Completed composite deck with railing" },
+      { "src": "/images/projects/finished-deck-2.jpeg", "alt": "Deck patio seating area" },
+      { "src": "/images/projects/finished-deck-3.jpeg", "alt": "Deck and outdoor space overview" },
+      { "src": "/images/projects/finished-deck-4.jpeg", "alt": "Finished deck from alternate angle" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Outdoor Structure Build",
+    "description": "Custom exterior structural work including framing, roofing, and weatherproofing for a new outdoor addition.",
+    "category": "Exterior",
+    "images": [
+      { "src": "/images/projects/unfinished-ext-structure-1.jpeg", "alt": "Exterior structure framing" },
+      { "src": "/images/projects/unfinished-ext-structure-3.jpeg", "alt": "Finished exterior structure" }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Patios and Decks Remodelling",
+    "description": "Remodelling and installation of patios and decks. We can help you with the design, materials, and installation of your new patio or deck.",
+    "category": "Patios and Decks",
+    "images": [
+      { "src": "/images/projects/finished-deck-3.jpeg", "alt": "Finished patio" },
+      { "src": "/images/projects/finished-deck-4.jpeg", "alt": "Finished patio" }
+    ]
+  }
+]

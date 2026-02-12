@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-oswald: "Oswald", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --color-primary: #F97316;
+  --color-primary-hover: #EA580C;
+  --color-accent: #FBBF24;
+  --color-charcoal: #1F2937;
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Kitchen Renovations",
+    "description": "Transform your kitchen with custom cabinetry, modern appliances, and expert craftsmanship. We create functional and beautiful spaces tailored to your lifestyle.",
+    "icon": "kitchen"
+  },
+  {
+    "id": 2,
+    "title": "Basement Finishing",
+    "description": "Turn your unfinished basement into a valuable living space. From entertainment rooms to home offices, we maximize your home's potential.",
+    "icon": "basement"
+  },
+  {
+    "id": 3,
+    "title": "Bathroom Remodeling",
+    "description": "Create your dream bathroom with quality fixtures, modern designs, and meticulous attention to detail. We handle everything from concept to completion.",
+    "icon": "bathroom"
+  },
+  {
+    "id": 4,
+    "title": "Full Home Renovations",
+    "description": "Complete home transformations that enhance both functionality and aesthetics. We manage every aspect of your renovation project with precision.",
+    "icon": "home"
+  },
+  {
+    "id": 5,
+    "title": "Flooring & Tile Installation",
+    "description": "Professional installation of hardwood, laminate, tile, and luxury vinyl flooring. Quality materials and expert craftsmanship guaranteed.",
+    "icon": "flooring"
+  },
+  {
+    "id": 6,
+    "title": "General Contracting",
+    "description": "Comprehensive construction services for residential projects of all sizes. Licensed, insured, and committed to excellence in every detail.",
+    "icon": "contracting"
+  }
+]
