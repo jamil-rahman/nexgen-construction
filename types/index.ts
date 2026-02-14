@@ -5,6 +5,8 @@ export interface Service {
   title: string;
   description: string;
   icon: string;
+  detailedDescription?: string;
+  features?: string[];
 }
 
 export interface Project {
@@ -26,6 +28,15 @@ export interface Review {
   text: string;
   location: string;
   image?: string;
+}
+
+export interface BeforeAfter {
+  id: number;
+  title: string;
+  category: string;
+  beforeImage: string;
+  afterImage: string;
+  description: string;
 }
 
 export interface ContactFormData {

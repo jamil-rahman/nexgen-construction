@@ -1,0 +1,26 @@
+# NexGen Construction - robots.txt
+# https://nexgenconstruction.ca/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://nexgenconstruction.ca/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 0
+
+# Disallow admin/private areas (if any in future)
+Disallow: /api/
+Disallow: /_next/static/
+
+# Allow all image crawling
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Allow all assets
+User-agent: *
+Allow: /images/
+Allow: /fonts/
+Allow: /*.css$
+Allow: /*.js$

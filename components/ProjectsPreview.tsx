@@ -76,10 +76,10 @@ export default function ProjectsPreview() {
         {/* CTA link */}
         <div className="mt-12 text-center">
           <a
-            href="#contact"
+            href="/projects"
             className="inline-flex items-center gap-2 font-oswald font-bold text-base sm:text-lg uppercase tracking-wide text-orange-500 hover:text-orange-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 min-h-[44px]"
           >
-            Start Your Project
+            View All Projects
             <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>

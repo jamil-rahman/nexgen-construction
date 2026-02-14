@@ -1,55 +1,72 @@
 [
   {
     "id": 1,
-    "title": "Modern Basement Finish",
-    "description": "A complete basement transformation into a functional living space with premium finishes and custom lighting.",
-    "category": "Basement",
+    "title": "Modern Kitchen Renovation",
+    "description": "A complete kitchen transformation featuring custom cabinetry, quartz countertops, and modern appliances with elegant design.",
+    "category": "Kitchen",
     "images": [
-      { "src": "/images/projects/finished-basement-1.jpeg", "alt": "Finished basement with modern lighting" },
-      { "src": "/images/projects/finished-basement-2.jpeg", "alt": "Basement living area with custom finishes" }
+      { "src": "/images/projects/project_1.jpeg", "alt": "Modern kitchen renovation with custom cabinetry" },
+      { "src": "/images/projects/project_1-1.jpeg", "alt": "Kitchen with quartz countertops and modern fixtures" },
+      { "src": "/images/projects/project_1-3.jpg", "alt": "Completed kitchen with elegant design" }
     ]
   },
   {
     "id": 2,
     "title": "Luxury Bathroom Remodel",
-    "description": "Full bathroom renovation featuring contemporary fixtures, tiled walk-in shower, and elegant vanity.",
+    "description": "Full bathroom renovation featuring contemporary fixtures, tiled walk-in shower, custom vanity, and premium finishes.",
     "category": "Bathroom",
     "images": [
-      { "src": "/images/projects/finished-bathroom-1.jpeg", "alt": "Remodeled bathroom with modern fixtures" },
-      { "src": "/images/projects/finished-bathroom-2.jpeg", "alt": "Bathroom vanity and shower area" },
-      { "src": "/images/projects/finished-bathroom-3.jpeg", "alt": "Completed bathroom tile work" }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "New Deck Installation",
-    "description": "A beautifully crafted outdoor deck with durable composite decking and stylish railing system.",
-    "category": "Deck",
-    "images": [
-      { "src": "/images/projects/finished-deck-1.jpeg", "alt": "Completed composite deck with railing" },
-      { "src": "/images/projects/finished-deck-2.jpeg", "alt": "Deck patio seating area" },
-      { "src": "/images/projects/finished-deck-3.jpeg", "alt": "Deck and outdoor space overview" },
-      { "src": "/images/projects/finished-deck-4.jpeg", "alt": "Finished deck from alternate angle" }
+      { "src": "/images/projects/project_2.jpeg", "alt": "Luxury bathroom with modern fixtures" },
+      { "src": "/images/projects/project_2-1.jpeg", "alt": "Bathroom vanity with custom cabinetry" },
+      { "src": "/images/projects/project_2-2.jpeg", "alt": "Tiled walk-in shower with glass enclosure" },
+      { "src": "/images/projects/project_2-3.jpeg", "alt": "Complete bathroom renovation with elegant tile work" },
+      { "src": "/images/projects/project_2-4.jpeg", "alt": "Finished bathroom with premium materials" }
     ]
   },
   {
     "id": 4,
-    "title": "Outdoor Structure Build",
-    "description": "Custom exterior structural work including framing, roofing, and weatherproofing for a new outdoor addition.",
-    "category": "Exterior",
+    "title": "Complete Home Renovation",
+    "description": "Comprehensive home renovation including structural updates, interior redesign, modern finishes, and custom millwork throughout.",
+    "category": "Full Renovation",
     "images": [
-      { "src": "/images/projects/unfinished-ext-structure-1.jpeg", "alt": "Exterior structure framing" },
-      { "src": "/images/projects/unfinished-ext-structure-3.jpeg", "alt": "Finished exterior structure" }
+      { "src": "/images/projects/project_4 (1).png", "alt": "Home renovation interior design" },
+      { "src": "/images/projects/project_4 (2).jpeg", "alt": "Renovated living space with modern finishes" },
+      { "src": "/images/projects/project_4 (3).jpeg", "alt": "Custom millwork and interior updates" },
+      { "src": "/images/projects/project_4 (4).jpeg", "alt": "Complete home transformation" },
+      { "src": "/images/projects/project_4 (5).jpeg", "alt": "Finished home renovation with structural updates" },
+      { "src": "/images/projects/project_4 (6).jpeg", "alt": "Modern home interior after renovation" }
     ]
   },
   {
     "id": 5,
-    "title": "Patios and Decks Remodelling",
-    "description": "Remodelling and installation of patios and decks. We can help you with the design, materials, and installation of your new patio or deck.",
-    "category": "Patios and Decks",
+    "title": "Basement Finishing Project",
+    "description": "Transform your unfinished basement into a beautiful living space with custom framing, flooring, lighting, and entertainment area.",
+    "category": "Basement",
     "images": [
-      { "src": "/images/projects/finished-deck-3.jpeg", "alt": "Finished patio" },
-      { "src": "/images/projects/finished-deck-4.jpeg", "alt": "Finished patio" }
+      { "src": "/images/projects/project_5 (1).jpeg", "alt": "Finished basement with custom lighting" },
+      { "src": "/images/projects/project_5 (2).jpeg", "alt": "Basement entertainment area" },
+      { "src": "/images/projects/project_5 (3).jpeg", "alt": "Basement with modern flooring and finishes" },
+      { "src": "/images/projects/project_5 (4).jpeg", "alt": "Completed basement transformation" }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Outdoor Deck Construction",
+    "description": "Custom outdoor deck installation with durable composite materials, stylish railing system, and professional craftsmanship.",
+    "category": "Deck",
+    "images": [
+      { "src": "/images/projects/project_6 (1).jpeg", "alt": "Custom outdoor deck with composite materials" },
+      { "src": "/images/projects/project_6 (2).jpeg", "alt": "Finished deck with railing system" }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Exterior Renovation & Siding",
+    "description": "Complete exterior renovation including new siding installation, trim work, and weatherproofing for enhanced curb appeal.",
+    "category": "Exterior",
+    "images": [
+      { "src": "/images/projects/project_7 (1).jpeg", "alt": "Exterior renovation with new siding" },
+      { "src": "/images/projects/project_7 (2).jpeg", "alt": "Completed exterior with modern finishes" }
     ]
   }
 ]

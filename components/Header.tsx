@@ -1,15 +1,15 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { useState, useCallback, useEffect } from "react";
 
 const NAV_LINKS = [
-  { href: "#hero", label: "Home" },
-  { href: "#services", label: "Services" },
-  { href: "#projects", label: "Projects" },
-  { href: "#reviews", label: "Reviews" },
-  { href: "#about", label: "About" },
-  { href: "#contact", label: "Contact" },
+  { href: "/", label: "Home" },
+  { href: "/services", label: "Services" },
+  { href: "/projects", label: "Projects" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ] as const;
 
 const PHONE_NUMBER = "416-371-0546";
@@ -102,8 +102,8 @@ export default function Header() {
           aria-label="Main navigation"
         >
           {/* Logo */}
-          <a
-            href="#hero"
+          <Link
+            href="/"
             className="flex shrink-0 items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 rounded"
             aria-label="NexGen Construction - Home"
           >
@@ -117,19 +117,19 @@ export default function Header() {
             <span className="font-oswald font-bold text-white text-xl sm:text-2xl uppercase tracking-wide">
               <span className="text-orange-500">NexGen</span> Construction
             </span>
-          </a>
+          </Link>
 
           {/* Desktop navigation */}
           <div className="hidden lg:flex lg:items-center lg:gap-10">
             <ul className="flex items-center gap-2" role="list">
               {NAV_LINKS.map(({ href, label }) => (
                 <li key={href}>
-                  <a
+                  <Link
                     href={href}
                     className="font-oswald font-medium uppercase text-sm tracking-widest text-gray-300 hover:text-orange-400 px-4 py-2 rounded transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
                   >
                     {label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -194,13 +194,13 @@ export default function Header() {
           <ul className="flex flex-col gap-1 px-6 pt-8" role="list">
             {NAV_LINKS.map(({ href, label }) => (
               <li key={href}>
-                <a
+                <Link
                   href={href}
                   onClick={closeMenu}
                   className="flex items-center font-oswald font-medium text-lg uppercase tracking-widest text-gray-300 hover:text-orange-400 hover:bg-gray-800 px-4 py-4 rounded transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-inset min-h-[44px]"
                 >
                   {label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

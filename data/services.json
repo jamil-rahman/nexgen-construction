@@ -3,36 +3,102 @@
     "id": 1,
     "title": "Kitchen Renovations",
     "description": "Transform your kitchen with custom cabinetry, modern appliances, and expert craftsmanship. We create functional and beautiful spaces tailored to your lifestyle.",
-    "icon": "kitchen"
+    "icon": "kitchen",
+    "detailedDescription": "Your kitchen is the heart of your home, and we specialize in creating stunning, functional spaces that bring families together. Our kitchen renovation services include complete design consultation, custom cabinetry installation, countertop fabrication and installation, modern appliance integration, flooring upgrades, lighting design, plumbing and electrical work, and backsplash installation. Whether you're looking for a contemporary minimalist design or a warm traditional aesthetic, our experienced team works closely with you to understand your vision and deliver results that exceed expectations. We handle every aspect of the renovation from demolition to final touches, ensuring a seamless process and exceptional quality throughout.",
+    "features": [
+      "Custom cabinetry design & installation",
+      "Countertop fabrication (quartz, granite, marble)",
+      "Modern appliance integration",
+      "Backsplash & tile work",
+      "Lighting design & installation",
+      "Plumbing & electrical upgrades",
+      "Flooring installation",
+      "Complete project management"
+    ]
   },
   {
     "id": 2,
     "title": "Basement Finishing",
     "description": "Turn your unfinished basement into a valuable living space. From entertainment rooms to home offices, we maximize your home's potential.",
-    "icon": "basement"
+    "icon": "basement",
+    "detailedDescription": "Unlock the hidden potential of your home with professional basement finishing services. We transform dark, unused basements into bright, inviting living spaces that add significant value to your property. Our comprehensive basement finishing includes framing and insulation, drywall installation and finishing, flooring options (carpet, vinyl, laminate, or tile), ceiling solutions (drop ceiling or drywall), electrical wiring and lighting, plumbing for bathrooms or wet bars, egress window installation for safety, and custom storage solutions. Whether you envision a home theater, guest suite, home gym, playroom, or additional bedroom, we bring your basement dreams to life with quality materials and expert craftsmanship. All work is completed to code with proper permits and inspections.",
+    "features": [
+      "Complete framing & insulation",
+      "Drywall installation & finishing",
+      "Flooring installation (multiple options)",
+      "Ceiling solutions (drop or drywall)",
+      "Electrical & lighting design",
+      "Plumbing for bathrooms/wet bars",
+      "Egress windows for safety",
+      "Custom built-ins & storage"
+    ]
   },
   {
     "id": 3,
     "title": "Bathroom Remodeling",
     "description": "Create your dream bathroom with quality fixtures, modern designs, and meticulous attention to detail. We handle everything from concept to completion.",
-    "icon": "bathroom"
+    "icon": "bathroom",
+    "detailedDescription": "Transform your outdated bathroom into a luxurious retreat with our comprehensive remodeling services. We specialize in both full bathroom renovations and targeted updates, offering complete design consultation, custom vanity and cabinet installation, shower and tub replacement or refinishing, tile work for floors, walls, and backsplashes, modern fixture installation, lighting upgrades, ventilation improvements, and accessibility modifications. Our team handles all plumbing and electrical work, ensuring your new bathroom is not only beautiful but also functional and built to last. From powder rooms to master ensuite bathrooms, we deliver exceptional results with attention to every detail. We use quality materials and proven techniques to create bathrooms that combine style, comfort, and durability.",
+    "features": [
+      "Custom vanity & cabinet installation",
+      "Walk-in shower & tub installations",
+      "Tile work (floor, wall, backsplash)",
+      "Modern fixture upgrades",
+      "Lighting & ventilation",
+      "Plumbing & electrical work",
+      "Accessibility modifications",
+      "Waterproofing & moisture control"
+    ]
   },
   {
     "id": 4,
     "title": "Full Home Renovations",
     "description": "Complete home transformations that enhance both functionality and aesthetics. We manage every aspect of your renovation project with precision.",
-    "icon": "home"
+    "icon": "home",
+    "detailedDescription": "Planning a complete home transformation? Our full home renovation services cover every aspect of your project from initial design to final walkthrough. We offer comprehensive project management, structural modifications and additions, complete interior redesign, kitchen and bathroom renovations, flooring throughout the home, painting and finishing, electrical system upgrades, plumbing improvements, HVAC modifications, and energy efficiency upgrades. Our experienced team coordinates all trades, manages permits and inspections, and keeps your project on schedule and within budget. We understand that a full home renovation is a significant investment, which is why we prioritize clear communication, quality workmanship, and your complete satisfaction. Whether you're updating a heritage home or modernizing a dated property, we have the expertise to bring your vision to life.",
+    "features": [
+      "Complete project management",
+      "Structural modifications",
+      "Multi-room renovations",
+      "Kitchen & bathroom updates",
+      "Flooring throughout",
+      "Electrical & plumbing upgrades",
+      "Painting & finishing",
+      "Permit coordination & inspections"
+    ]
   },
   {
     "id": 5,
     "title": "Flooring & Tile Installation",
     "description": "Professional installation of hardwood, laminate, tile, and luxury vinyl flooring. Quality materials and expert craftsmanship guaranteed.",
-    "icon": "flooring"
+    "icon": "flooring",
+    "detailedDescription": "The right flooring can completely transform the look and feel of your space. We offer professional installation of all flooring types including hardwood (solid and engineered), laminate flooring, luxury vinyl plank (LVP) and tile, ceramic and porcelain tile, natural stone tile, and heated floor systems. Our flooring experts help you select the perfect material for each room based on traffic, moisture levels, and your aesthetic preferences. We handle complete subfloor preparation, moisture barrier installation, precise cutting and fitting, professional finishing and sealing, and baseboard and trim installation. Whether you're updating a single room or flooring your entire home, we deliver flawless installations that stand the test of time. All work includes proper underlayment and follows manufacturer specifications for warranty compliance.",
+    "features": [
+      "Hardwood installation & refinishing",
+      "Laminate & LVP installation",
+      "Ceramic & porcelain tile",
+      "Natural stone tile work",
+      "Heated floor systems",
+      "Subfloor preparation & leveling",
+      "Baseboard & trim installation",
+      "Professional finishing & sealing"
+    ]
   },
   {
     "id": 6,
     "title": "General Contracting",
     "description": "Comprehensive construction services for residential projects of all sizes. Licensed, insured, and committed to excellence in every detail.",
-    "icon": "contracting"
+    "icon": "contracting",
+    "detailedDescription": "As a full-service general contractor, we handle residential construction projects of all scopes and complexities. Our general contracting services include project planning and design consultation, permit acquisition and code compliance, trade coordination (plumbers, electricians, HVAC), material sourcing and procurement, construction management and scheduling, quality control and inspections, budget management, and warranty support. We pride ourselves on clear communication, reliable scheduling, and delivering projects that meet or exceed building codes and industry standards. Whether you need structural repairs, room additions, exterior renovations, or custom carpentry work, our licensed and insured team has the expertise to complete your project safely, efficiently, and to the highest quality standards. We treat every home as if it were our own.",
+    "features": [
+      "Licensed & insured contractor",
+      "Complete project management",
+      "Permit & code compliance",
+      "Trade coordination",
+      "Material sourcing & procurement",
+      "Quality control & inspections",
+      "Structural repairs & additions",
+      "Custom carpentry & millwork"
+    ]
   }
 ]

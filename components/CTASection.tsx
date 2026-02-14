@@ -1,67 +1,12 @@
 "use client";
 
-import { useState, FormEvent } from "react";
-import { ContactFormData, FormStatus } from "@/types";
-
-const WORK_TYPES = [
-  "Kitchen Renovation",
-  "Bathroom Remodeling",
-  "Basement Finishing",
-  "Full Home Renovation",
-  "Flooring & Tile Installation",
-  "Deck & Outdoor Spaces",
-  "Painting & Repainting",
-  "Simple Installations",
-  "General Contracting",
-  "Other",
-] as const;
+import ContactForm from "@/components/ContactForm";
 
 const PHONE_NUMBER = "416-371-0546";
 const PHONE_HREF = "tel:+14163710546";
-const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID ?? "";
-
-const INITIAL_FORM: ContactFormData = {
-  name: "",
-  email: "",
-  phone: "",
-  location: "",
-  workType: "",
-  message: "",
-};
 
 /** Contact form section with phone CTA */
 export default function CTASection() {
-  const [form, setForm] = useState<ContactFormData>(INITIAL_FORM);
-  const [status, setStatus] = useState<FormStatus>("idle");
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
-  ) => {
-    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setStatus("submitting");
-
-    try {
-      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify(form),
-      });
-
-      if (res.ok) {
-        setStatus("success");
-        setForm(INITIAL_FORM);
-      } else {
-        setStatus("error");
-      }
-    } catch {
-      setStatus("error");
-    }
-  };
-
   return (
     <section id="contact" className="py-20 sm:py-24 bg-white scroll-mt-20" aria-labelledby="contact-heading">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
@@ -83,166 +28,7 @@ export default function CTASection() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
           {/* Contact form - takes 3 columns */}
           <div className="lg:col-span-3">
-            <form onSubmit={handleSubmit} className="space-y-5" noValidate>
-              {/* Name & Email row */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <div>
-                  <label
-                    htmlFor="contact-name"
-                    className="block font-oswald font-medium text-gray-800 text-sm uppercase tracking-wide mb-1.5"
-                  >
-                    Name <span className="text-orange-500" aria-hidden="true">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="contact-name"
-                    name="name"
-                    value={form.name}
-                    onChange={handleChange}
-                    required
-                    autoComplete="name"
-                    className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 font-lato text-base text-gray-800 placeholder-gray-400 transition-colors focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 focus:outline-none"
-                    placeholder="Your name"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="contact-email"
-                    className="block font-oswald font-medium text-gray-800 text-sm uppercase tracking-wide mb-1.5"
-                  >
-                    Email <span className="text-orange-500" aria-hidden="true">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    id="contact-email"
-                    name="email"
-                    value={form.email}
-                    onChange={handleChange}
-                    required
-                    autoComplete="email"
-                    className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 font-lato text-base text-gray-800 placeholder-gray-400 transition-colors focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 focus:outline-none"
-                    placeholder="you@email.com"
-                  />
-                </div>
-              </div>
-
-              {/* Phone & Location row */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <div>
-                  <label
-                    htmlFor="contact-phone"
-                    className="block font-oswald font-medium text-gray-800 text-sm uppercase tracking-wide mb-1.5"
-                  >
-                    Phone <span className="text-orange-500" aria-hidden="true">*</span>
-                  </label>
-                  <input
-                    type="tel"
-                    id="contact-phone"
-                    name="phone"
-                    value={form.phone}
-                    onChange={handleChange}
-                    required
-                    autoComplete="tel"
-                    className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 font-lato text-base text-gray-800 placeholder-gray-400 transition-colors focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 focus:outline-none"
-                    placeholder="(555) 000-0000"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="contact-location"
-                    className="block font-oswald font-medium text-gray-800 text-sm uppercase tracking-wide mb-1.5"
-                  >
-                    Location <span className="text-orange-500" aria-hidden="true">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="contact-location"
-                    name="location"
-                    value={form.location}
-                    onChange={handleChange}
-                    required
-                    autoComplete="address-level2"
-                    className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 font-lato text-base text-gray-800 placeholder-gray-400 transition-colors focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 focus:outline-none"
-                    placeholder="City, Province"
-                  />
-                </div>
-              </div>
-
-              {/* Work Type dropdown */}
-              <div>
-                <label
-                  htmlFor="contact-workType"
-                  className="block font-oswald font-medium text-gray-800 text-sm uppercase tracking-wide mb-1.5"
-                >
-                  Type of Work <span className="text-orange-500" aria-hidden="true">*</span>
-                </label>
-                <select
-                  id="contact-workType"
-                  name="workType"
-                  value={form.workType}
-                  onChange={handleChange}
-                  required
-                  className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 font-lato text-base text-gray-800 transition-colors focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 focus:outline-none appearance-none"
-                  style={{
-                    backgroundImage:
-                      "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e\")",
-                    backgroundPosition: "right 0.75rem center",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "1.25em 1.25em",
-                  }}
-                >
-                  <option value="" disabled>
-                    Select a service
-                  </option>
-                  {WORK_TYPES.map((type) => (
-                    <option key={type} value={type}>
-                      {type}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              {/* Message textarea */}
-              <div>
-                <label
-                  htmlFor="contact-message"
-                  className="block font-oswald font-medium text-gray-800 text-sm uppercase tracking-wide mb-1.5"
-                >
-                  Message <span className="text-orange-500" aria-hidden="true">*</span>
-                </label>
-                <textarea
-                  id="contact-message"
-                  name="message"
-                  value={form.message}
-                  onChange={handleChange}
-                  required
-                  rows={5}
-                  className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 font-lato text-base text-gray-800 placeholder-gray-400 transition-colors focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 focus:outline-none resize-y"
-                  placeholder="Tell us about your project..."
-                />
-              </div>
-
-              {/* Submit button */}
-              <button
-                type="submit"
-                disabled={status === "submitting"}
-                className="w-full sm:w-auto inline-flex items-center justify-center px-10 py-4 bg-orange-500 hover:bg-orange-600 disabled:bg-orange-300 text-white font-oswald font-bold text-base uppercase tracking-wide rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 min-h-[48px] shadow-md hover:shadow-lg"
-              >
-                {status === "submitting" ? "Sending..." : "Send Message"}
-              </button>
-
-              {/* Status messages */}
-              {status === "success" && (
-                <p className="font-lato text-green-600 text-sm mt-3" role="status">
-                  Thank you! Your message has been sent. We'll get back to you within 24 hours.
-                </p>
-              )}
-              {status === "error" && (
-                <p className="font-lato text-red-600 text-sm mt-3" role="alert">
-                  Something went wrong. Please try again or call us directly.
-                </p>
-              )}
-            </form>
+            <ContactForm />
           </div>
 
           {/* Contact info sidebar - takes 2 columns */}
@@ -297,10 +83,10 @@ export default function CTASection() {
                     />
                   </svg>
                   <a
-                    href="mailto:info@nexgenconstruction.ca"
+                    href="mailto:info@nexgenconstructionca.com"
                     className="font-lato text-gray-300 hover:text-orange-400 text-sm transition-colors"
                   >
-                    info@nexgenconstruction.ca
+                    info@nexgenconstructionca.com
                   </a>
                 </div>
                 <div className="flex items-start gap-3 lg:justify-start justify-center">

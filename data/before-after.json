@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Bathroom with Tub & Double Sink",
+    "category": "Bathroom",
+    "beforeImage": "/images/before-after/bathroom with tub and double sink-before.jpg",
+    "afterImage": "/images/before-after/bathroom with tub and double sink-after.jpg",
+    "description": "Complete bathroom renovation featuring a modern tub installation, elegant double sink vanity, updated fixtures, and premium tile work throughout."
+  },
+  {
+    "id": 2,
+    "title": "Large Shower Area Renovation",
+    "category": "Bathroom",
+    "beforeImage": "/images/before-after/large shower area-before.jpeg",
+    "afterImage": "/images/before-after/large shower area-after.jpeg",
+    "description": "Luxurious walk-in shower transformation with contemporary tiling, modern glass enclosure, rainfall showerhead, and updated lighting."
+  },
+  {
+    "id": 3,
+    "title": "Shower Area Remodel",
+    "category": "Bathroom",
+    "beforeImage": "/images/before-after/shower area-before.jpeg",
+    "afterImage": "/images/before-after/shower area-after.jpeg",
+    "description": "Updated shower area with sleek tile design, new fixtures, improved drainage, and modern aesthetic for a fresh, clean look."
+  },
+  {
+    "id": 4,
+    "title": "Basement Living Room Transformation",
+    "category": "Basement",
+    "beforeImage": "/images/before-after/basement living room-before.jpeg",
+    "afterImage": "/images/before-after/basement living room-after.jpeg",
+    "description": "Converted unfinished basement into a beautiful living space with custom finishes, recessed lighting, quality flooring, and cozy atmosphere."
+  },
+  {
+    "id": 5,
+    "title": "Living Room Renovation",
+    "category": "Living Room",
+    "beforeImage": "/images/before-after/living room-before.jpeg",
+    "afterImage": "/images/before-after/living room-after.jpeg",
+    "description": "Complete living room makeover featuring modern design, updated flooring, fresh paint, improved lighting, and enhanced functionality."
+  },
+  {
+    "id": 6,
+    "title": "Hallway Modernization",
+    "category": "Interior",
+    "beforeImage": "/images/before-after/hallway-before.jpeg",
+    "afterImage": "/images/before-after/hallway-after.jpeg",
+    "description": "Hallway transformation with contemporary finishes, new flooring, updated lighting fixtures, and clean, modern aesthetic throughout."
+  },
+  {
+    "id": 7,
+    "title": "Large Outdoor Deck Build",
+    "category": "Deck",
+    "beforeImage": "/images/before-after/large deck-before.jpeg",
+    "afterImage": "/images/before-after/large deck-after.jpeg",
+    "description": "Custom large deck construction with durable composite materials, stylish railing system, and professional craftsmanship for outdoor entertaining."
+  }
+]

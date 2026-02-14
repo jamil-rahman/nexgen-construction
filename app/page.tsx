@@ -4,19 +4,20 @@ import ProjectsPreview from '@/components/ProjectsPreview';
 import ReviewsSection from '@/components/ReviewsSection';
 import AboutPreview from '@/components/AboutPreview';
 import CertificationsSection from '@/components/CertificationsSection';
+import FAQSection from '@/components/FAQSection';
 import CTASection from '@/components/CTASection';
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <CTASection />
       <ServicesPreview />
       <ProjectsPreview />
       <ReviewsSection />
       <AboutPreview />
       <CertificationsSection />
-      
+      <FAQSection />
+      <CTASection />
     </>
   );
 }

@@ -19,28 +19,34 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "NexGen Construction | Professional Construction Services in GTA, Ontario",
+  title: "NexGen Construction | Licensed Contractor in Toronto GTA",
   description:
-    "Licensed & insured construction company serving the Greater Toronto Area. Kitchen renovations, bathroom remodeling, basement finishing, deck building & full home renovations. Free quotes — call 416-371-0546.",
+    "Award-winning construction company in Toronto GTA. Expert kitchen renovations, bathroom remodeling, basement finishing & deck building. Licensed, insured, WSIB-compliant. 20+ years experience. Free quotes — (416) 371-0546.",
   keywords: [
-    "construction company GTA",
-    "home renovation Toronto",
-    "kitchen renovation Ontario",
+    "construction company Toronto",
+    "licensed contractor GTA",
+    "kitchen renovation Toronto",
     "bathroom remodeling GTA",
     "basement finishing Toronto",
-    "deck building Ontario",
-    "general contractor GTA",
-    "licensed insured contractor",
-    "NexGen Construction",
+    "deck builder Ontario",
+    "home renovation contractor",
+    "residential construction GTA",
+    "WSIB compliant contractor",
+    "insured renovation company",
+    "Toronto home improvement",
+    "GTA general contractor",
+    "NexGen Construction Toronto",
+    "professional contractor Ontario",
+    "affordable home renovations",
   ],
   authors: [{ name: "NexGen Construction" }],
   creator: "NexusMediaAgency Ltd.",
   metadataBase: new URL("https://nexgenconstruction.ca"),
   alternates: { canonical: "/" },
   openGraph: {
-    title: "NexGen Construction | Professional Construction Services in GTA",
+    title: "NexGen Construction | Licensed Contractor in Toronto GTA",
     description:
-      "Licensed & insured construction company serving the Greater Toronto Area. Kitchen renovations, bathrooms, basements, decks & full home renovations. Free quotes available.",
+      "Award-winning construction company in Toronto GTA. Expert kitchen renovations, bathroom remodeling, basement finishing & deck building. Licensed, insured, WSIB-compliant. Free quotes available.",
     type: "website",
     locale: "en_CA",
     siteName: "NexGen Construction",
@@ -50,15 +56,15 @@ export const metadata: Metadata = {
         url: "/images/hero/hero.jpg",
         width: 1200,
         height: 630,
-        alt: "NexGen Construction — Professional Construction Services in GTA, Ontario",
+        alt: "NexGen Construction — Licensed Construction Contractor Serving Toronto and Greater Toronto Area",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NexGen Construction | Construction Services in GTA",
+    title: "NexGen Construction | Licensed Contractor Toronto GTA",
     description:
-      "Licensed & insured construction company serving the Greater Toronto Area. Free quotes — call 416-371-0546.",
+      "Award-winning construction company in Toronto GTA. Kitchen renovations, bathrooms, basements, decks. Licensed & insured. Free quotes — (416) 371-0546.",
     images: ["/images/hero/hero.jpg"],
   },
   icons: {
@@ -68,7 +74,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true },
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
   },
 };
 
