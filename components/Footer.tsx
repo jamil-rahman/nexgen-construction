@@ -22,7 +22,7 @@ const PHONE_NUMBER = "(416) 371-0546";
 const PHONE_HREF = "tel:+14163710546";
 const WHATSAPP_HREF = "https://wa.me/14163710546";
 const FACEBOOK_HREF = "https://www.facebook.com/profile.php?id=61561801927181";
-const EMAIL = "info@nexgenconstruction.ca";
+const EMAIL = "info@nexgenconstructionca.com";
 const CURRENT_YEAR = new Date().getFullYear();
 
 /** Site footer with navigation, services, and contact info */
