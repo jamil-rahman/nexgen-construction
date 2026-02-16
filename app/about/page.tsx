@@ -26,10 +26,10 @@ export const metadata: Metadata = {
     siteName: "NexGen Construction",
     images: [
       {
-        url: "/images/projects/Owner.jpeg",
+        url: "/images/hero/hero-about.jpeg",
         width: 1200,
         height: 630,
-        alt: "NexGen Construction Owner",
+        alt: "About NexGen Construction - Local Construction Contractor Team",
       },
     ],
     locale: "en_CA",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About NexGen Construction | Local Waterloo Region Contractor",
     description: "Meet the team behind NexGen Construction. Locally-owned, licensed, and committed to quality.",
-    images: ["/images/projects/Owner.jpeg"],
+    images: ["/images/hero/hero-about.jpeg"],
   },
   alternates: {
     canonical: "/about",
@@ -51,16 +51,33 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-linear-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 sm:py-20 lg:py-24">
-        <div className="absolute inset-0 bg-[url('/images/misc/texture.jpg')] opacity-5 bg-cover bg-center" aria-hidden="true" />
-        <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="max-w-3xl">
-            <h1 className="font-oswald font-bold text-4xl sm:text-5xl lg:text-6xl uppercase mb-6 leading-tight">
-              About NexGen Construction
+      <section className="relative h-[400px] sm:h-[500px] lg:h-[600px] overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/hero/hero-about.jpeg"
+            alt="About NexGen Construction - Experienced construction professionals at work"
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
+        
+        {/* Overlay for better text contrast */}
+        <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-black/30 z-10" aria-hidden="true" />
+        
+        {/* Content */}
+        <div className="relative z-20 h-full flex items-center">
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
+            <div className="max-w-3xl">
+            <h1 className="font-oswald font-bold text-4xl sm:text-5xl lg:text-6xl uppercase mb-6 leading-tight text-white">
+              About <span className="text-orange-500">NexGen </span>Construction
             </h1>
-            <p className="font-lato text-lg sm:text-xl text-gray-300 leading-relaxed">
+            <p className="font-lato text-lg sm:text-xl text-gray-200 leading-relaxed">
               Building dreams, one project at a time. We're a locally-owned construction company dedicated to delivering exceptional craftsmanship and personalized service throughout Waterloo Region.
             </p>
+            </div>
           </div>
         </div>
       </section>

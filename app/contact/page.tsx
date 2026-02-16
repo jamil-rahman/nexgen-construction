@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 
 const PHONE_NUMBER = "416-371-0546";
@@ -32,10 +33,10 @@ export const metadata: Metadata = {
     siteName: "NexGen Construction",
     images: [
       {
-        url: "/images/logos/logo.png",
+        url: "/images/hero/hero-contact.jpg",
         width: 1200,
         height: 630,
-        alt: "Contact NexGen Construction",
+        alt: "Contact NexGen Construction - Get Your Free Quote Today",
       },
     ],
     locale: "en_CA",
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Contact NexGen Construction | Free Quote",
     description: "Get a free quote for your construction or renovation project in Waterloo Region.",
-    images: ["/images/logos/logo.png"],
+    images: ["/images/hero/hero-contact.jpg"],
   },
   alternates: {
     canonical: "/contact",
@@ -57,17 +58,33 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-linear-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 sm:py-20 lg:py-24">
-        <div className="absolute inset-0 bg-[url('/images/misc/texture.jpg')] opacity-5 bg-cover bg-center" aria-hidden="true" />
-        <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="max-w-3xl">
-            <h1 className="font-oswald font-bold text-4xl sm:text-5xl lg:text-6xl uppercase mb-6 leading-tight">
-              Get Your Free Quote
-            </h1>
-            <p className="font-lato text-lg sm:text-xl text-gray-300 leading-relaxed mb-8">
-              Ready to transform your space? Contact us today for a free, no-obligation consultation. We're here to answer your questions and bring your vision to life.
-            </p>
-            <div className="flex flex-wrap gap-4">
+      <section className="relative h-[400px] sm:h-[500px] lg:h-[600px] overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/hero/hero-contact.jpg"
+            alt="Contact NexGen Construction - Professional contractors ready to help"
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
+        
+        {/* Overlay for better text contrast */}
+        <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-black/30 z-10" aria-hidden="true" />
+        
+        {/* Content */}
+        <div className="relative z-20 h-full flex items-center">
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
+            <div className="max-w-3xl">
+              <h1 className="font-oswald font-bold text-4xl sm:text-5xl lg:text-6xl uppercase mb-6 leading-tight text-white">
+                Get Your <span className="text-yellow-500">Free </span>Quote
+              </h1>
+              <p className="font-lato text-lg sm:text-xl text-gray-200 leading-relaxed mb-8">
+                Ready to transform your space? Contact us today for a free, no-obligation consultation. We're here to answer your questions and bring your vision to life.
+              </p>
+              <div className="flex flex-wrap gap-4">
               <a
                 href={PHONE_HREF}
                 className="inline-flex items-center justify-center px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-oswald font-bold text-base uppercase tracking-wide rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900 min-h-[48px]"
@@ -87,6 +104,7 @@ export default function ContactPage() {
                 </svg>
                 Email Us
               </a>
+              </div>
             </div>
           </div>
         </div>

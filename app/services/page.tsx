@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import ServiceDetail from "@/components/ServiceDetail";
 import services from "@/data/services.json";
 
@@ -30,10 +31,10 @@ export const metadata: Metadata = {
     siteName: "NexGen Construction",
     images: [
       {
-        url: "/images/logos/logo.png",
+        url: "/images/hero/hero-services.jpg",
         width: 1200,
         height: 630,
-        alt: "NexGen Construction Services",
+        alt: "NexGen Construction Services - Professional Contractors",
       },
     ],
     locale: "en_CA",
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Professional Construction Services | NexGen Construction",
     description: "Expert kitchen, bathroom, basement renovations and more in Waterloo Region.",
-    images: ["/images/logos/logo.png"],
+    images: ["/images/hero/hero-services.jpg"],
   },
   alternates: {
     canonical: "/services",
@@ -55,14 +56,30 @@ export default function ServicesPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-linear-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 sm:py-20 lg:py-24">
-        <div className="absolute inset-0 bg-[url('/images/misc/texture.jpg')] opacity-5 bg-cover bg-center" aria-hidden="true" />
-        <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="max-w-3xl">
-            <h1 className="font-oswald font-bold text-4xl sm:text-5xl lg:text-6xl uppercase mb-6 leading-tight">
+      <section className="relative h-[400px] sm:h-[500px] lg:h-[600px] overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/hero/hero-services.jpg"
+            alt="NexGen Construction professional services - Expert contractors at work"
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
+        
+        {/* Overlay for better text contrast */}
+        <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-black/30 z-10" aria-hidden="true" />
+        
+        {/* Content */}
+        <div className="relative z-20 h-full flex items-center">
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
+            <div className="max-w-3xl">
+            <h1 className="font-oswald font-bold text-4xl sm:text-5xl lg:text-6xl uppercase mb-6 leading-tight text-white">
               Professional Construction Services
             </h1>
-            <p className="font-lato text-lg sm:text-xl text-gray-300 leading-relaxed mb-8">
+            <p className="font-lato text-lg sm:text-xl text-gray-200 leading-relaxed mb-8">
               Expert residential construction and renovation services throughout Waterloo Region. From kitchen and bathroom remodels to complete home transformations, we deliver quality craftsmanship backed by years of experience.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -78,6 +95,7 @@ export default function ServicesPage() {
               >
                 Call (519) 722-1595
               </a>
+            </div>
             </div>
           </div>
         </div>
