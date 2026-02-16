@@ -65,66 +65,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Owner Section */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Owner Image */}
-            <div className="flex flex-col items-center lg:items-end">
-              <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
-                <div className="absolute inset-0 rounded-full bg-linear-to-br from-orange-400 to-orange-600 opacity-20 blur-2xl" aria-hidden="true" />
-                <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-orange-500 shadow-2xl">
-                  <Image
-                    src="/images/projects/Owner.jpeg"
-                    alt="NexGen Construction Owner - Dedicated to quality craftsmanship"
-                    fill
-                    className="object-cover"
-                    priority
-                    sizes="(max-width: 640px) 256px, (max-width: 1024px) 320px, 384px"
-                  />
-                </div>
-              </div>
-              {/* Inspirational Quote */}
-              <figure className="mt-8 max-w-md text-center lg:text-right">
-                <blockquote className="relative">
-                  <svg
-                    className="absolute -top-4 -left-2 h-8 w-8 text-orange-500 opacity-50"
-                    fill="currentColor"
-                    viewBox="0 0 32 32"
-                    aria-hidden="true"
-                  >
-                    <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                  </svg>
-                  <p className="font-lato text-lg sm:text-xl text-gray-700 italic leading-relaxed pl-6 pr-2">
-                    Quality is never an accident; it is always the result of intelligent effort, dedication, and a commitment to excellence.
-                  </p>
-                </blockquote>
-                <figcaption className="mt-4 font-oswald text-sm uppercase tracking-wide text-gray-500">
-                  — Our Philosophy
-                </figcaption>
-              </figure>
-            </div>
 
-            {/* Owner Story */}
-            <div className="flex flex-col justify-center">
-              <h2 className="font-oswald font-bold text-3xl sm:text-4xl uppercase text-gray-800 mb-6">
-                Meet the Team
-              </h2>
-              <div className="space-y-4 font-lato text-base sm:text-lg text-gray-700 leading-relaxed">
-                <p>
-                  NexGen Construction was founded with a simple yet powerful vision: to provide homeowners in Waterloo Region with honest, reliable, and high-quality construction services. What started as a passion for transforming spaces has grown into a trusted name in residential construction and renovation.
-                </p>
-                <p>
-                  Our founder brings years of hands-on experience and a deep commitment to craftsmanship. Every project is approached with the same care and attention to detail as if we were working on our own home. We believe that building isn't just about materials and tools—it's about building relationships, trust, and lasting value for our clients.
-                </p>
-                <p>
-                  As a locally-owned business, we understand the unique needs of homeowners in our community. We're not a faceless corporation; we're your neighbors, and we take pride in contributing to the beauty and functionality of homes throughout Waterloo, Kitchener, Cambridge, and beyond.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Company Values */}
       <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">

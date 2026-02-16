@@ -158,25 +158,25 @@ export default function ServicesPage() {
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-center">
               {[
-                "Waterloo",
-                "Kitchener",
-                "Cambridge",
-                "Guelph",
-                "Elmira",
-                "New Hamburg",
-                "Ayr",
-                "Baden",
-                "Breslau",
-                "St. Jacobs",
-                "Wellesley",
-                "Woolwich",
+                "Toronto",
+                "Scarborough",
+                "North York",
+                "Etobicoke",
+                "Markham",
+                "Richmond Hill",
+                "Vaughan",
+                "Mississauga",
+                "Brampton",
+                "Pickering",
+                "Ajax",
+                "Whitby",
               ].map((city) => (
                 <div key={city} className="bg-white rounded-lg p-4 shadow-sm">
                   <p className="font-lato font-bold text-gray-800">{city}</p>
                 </div>
               ))}
             </div>
-            <p className="font-lato text-sm text-gray-600 text-center mt-6">
+            <p className="font-lato text-sm text-yellow-700 text-center mt-6">
               Don't see your area listed? Contact us to discuss your project location.
             </p>
           </div>

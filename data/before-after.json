@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "title": "Bathroom with Tub & Double Sink",
-    "category": "Bathroom",
-    "beforeImage": "/images/before-after/bathroom with tub and double sink-before.jpg",
-    "afterImage": "/images/before-after/bathroom with tub and double sink-after.jpg",
-    "description": "Complete bathroom renovation featuring a modern tub installation, elegant double sink vanity, updated fixtures, and premium tile work throughout."
+    "title": "Exterior Housing Transformation",
+    "category": "Exterior",
+    "beforeImage": "/images/before-after/exterior_housing-before.jpeg",
+    "afterImage": "/images/before-after/exterior_housing-after.png",
+    "description": "Complete exterior renovation with new siding installation, updated trim work, modern color scheme, and enhanced curb appeal throughout."
   },
   {
     "id": 2,
@@ -54,5 +54,29 @@
     "beforeImage": "/images/before-after/large deck-before.jpeg",
     "afterImage": "/images/before-after/large deck-after.jpeg",
     "description": "Custom large deck construction with durable composite materials, stylish railing system, and professional craftsmanship for outdoor entertaining."
+  },
+  {
+    "id": 8,
+    "title": "Bathroom with Tub & Double Sink",
+    "category": "Bathroom",
+    "beforeImage": "/images/before-after/bathroom with tub and double sink-before.jpg",
+    "afterImage": "/images/before-after/bathroom with tub and double sink-after.jpg",
+    "description": "Complete bathroom renovation featuring a modern tub installation, elegant double sink vanity, updated fixtures, and premium tile work throughout."
+  },
+  {
+    "id": 9,
+    "title": "Interior Flooring Installation",
+    "category": "Flooring",
+    "beforeImage": "/images/before-after/interior_flooring-before.jpeg",
+    "afterImage": "/images/before-after/interior_flooring-after.png",
+    "description": "Professional flooring installation featuring quality materials, precise fitting, clean finish work, and seamless integration with existing space."
+  },
+  {
+    "id": 10,
+    "title": "Hardwood Flooring Upgrade",
+    "category": "Flooring",
+    "beforeImage": "/images/before-after/wooden_flooring-before.jpeg",
+    "afterImage": "/images/before-after/wooden_flooring-after.png",
+    "description": "Beautiful hardwood flooring installation with rich tones, expert craftsmanship, professional finishing, and stunning visual transformation."
   }
 ]
